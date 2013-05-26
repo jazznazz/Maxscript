@@ -5,11 +5,12 @@
 	-- Usage:
 	-- The script needs a version of "soulburn scripts" - http://www.neilblevins.com/cg_tools/soulburnscripts/soulburnscripts.htm
 	-- for its object combining function, and also Vray - if you want to use Vray's specific bake elements, of course.
-
+	
+	-- Main purpose - baking testures to SEVERAL selected objects , not just one. 
 	-- Tested on 3DS MAX 2013, but should run on older versions, too.
 	-- No User interface for now, just open it in MAX's Script editor and hit Ctrl+E. 
 	-- All the important variables are at the top and are relatively "human" readable. Read the comment after each variable for info.
-	-- Change the bakeElementCustom_elementName variable to select a bake element.
+	-- Change the "bakeElementCustom_elementName" variable to select a bake element.
 
 bakeElementCustom_elementName = "Mray_AO"	-- Change the element you want to bake from here. Cases: "Mray_AO" , "Vray_DirtMap" , "Vray_EdgeSmooth" , "Scanline_Quick_BW_Mask"
 bakePathFilename = "d:\\CustomMapBake.png" -- where the file is saved
