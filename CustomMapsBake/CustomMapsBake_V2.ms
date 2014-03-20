@@ -1,4 +1,3 @@
-
 	-- Custom bake elements v2
 	--	25.05.13 , Hristo Dinev. A HUGE thanks to Neil Blevins - http://www.neilblevins.com/, and also to Chaos Group :)
 
@@ -11,7 +10,18 @@
 	-- No User interface for now, just open it in MAX's Script editor and hit Ctrl+E. 
 	-- All the important variables are at the top and are relatively "human" readable. Read the comment after each variable for info.
 	-- Change the "bakeElementCustom_elementName" variable to select a bake element.
-
+	
+	-- Algorithm:
+	-- make copy of selection, 
+	-- make the copy one object, 
+	-- hide original selection, 
+	-- setRenderer()
+	-- setMaterial()
+	-- setVraySettings/setMraySettings
+	-- bake() with the copy, 
+	-- delete copy, 
+	-- unhide original
+	
 bakeElementCustom_elementName = "Mray_AO"	-- Change the element you want to bake from here. Cases: "Mray_AO" , "Vray_DirtMap" , "Vray_EdgeSmooth" , "Scanline_Quick_BW_Mask"
 bakePathFilename = "d:\\CustomMapBake.png" -- where the file is saved
 bakeFileType = 		"d:\\CustomMapBake.png" -- same path, used just for the file extension
